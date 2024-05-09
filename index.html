@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Hóng Tết! - Chúc Mừng Năm Mới</title>
+	<link rel="apple-touch-icon-precomposed" href="https://hongtet.github.io/img/img/logo.png" sizes="72x72">
+	<link rel="apple-touch-icon-precomposed" href="https://hongtet.github.io/img/img/logo.png" sizes="144x144">
+	<link rel="apple-touch-icon-precomposed" href="https://hongtet.github.io/img/img/logo.png" sizes="180x180">
+	<link rel="apple-touch-icon-precomposed" href="https://hongtet.github.io/img/img/logo.png" sizes="57x57">
+	<link rel="apple-touch-icon-precomposed" href="https://hongtet.github.io/img/img/logo.png" sizes="114x114">
+	<link rel="nokia-touch-icon" href="https://hongtet.github.io/img/img/logo.png">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+
+    <div class="main">
+      <div id="bgm" class="bgm rotate" style="animation-play-state: paused;">
+        <audio loop="" id="music">
+          <source src="https://hongtet.github.io/amthanh/amthanh/cmnm.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <img src="https://hongtet.github.io/img/img/phao-hoa.image" class="firework" />
+      <img src="https://hongtet.github.io/img/img/phao-hoa.image" class="firework2" />
+      <div class="outer">
+        <div class="bp-box">
+          <div class="bg phaono phaono1 animated slideInDown"></div>
+          <div class="bg bomb bomb1" style="top:460px"></div>
+          <div class="cfgy">
+            <img src="https://hongtet.github.io/img/img/quediem.image" width="40" style="position: absolute;top: -13px;
+                    left: 65px;;">
+            <span id="dian" style="position: absolute;top: 53px;
+                    left: 91px;display: block;white-space: nowrap;">Nhấn để đốt pháo</span>
+          </div>
+          <audio id="phaono" src="https://hongtet.github.io/amthanh/amthanh/tieng-phao-no.mp3" preload="auto"></audio>
+        </div>
+      </div>
+      <div class="box" id="box">
+        <div class="page current">
+          <img style="width:200px;  " src="https://hongtet.github.io/img/img/tet.gif" class="img1" />
+          <h1 class="gold-text">
+            <span class="gold-text__highlight">Happy New Year to you</span>
+          </h1>
+        </div>
+        <div class="page">
+          <h2 class="left-in word word1">Chúc Mừng Năm Mới</h2>
+          <h2 class="right-in word word2">Happy <br> New <br> Year <br> 2024</h2>
+          <h2 class="small-in word word3">Tiền <br>Vào <br>Như <br>Nước </h2>
+          <h2 class="bottom-in word word4">Phát <br>Tài <br>Phát <br>Lộc </h2>
+          <h2 class="big-in word word5">Mừng Xuân <br>Vạn Sự <br>Như <br>Ý </h2>
+          <h2 class="top-in word word6">Thuận <br/> Buồm <br>Xuôi <br>Gió </h2>
+          <h2 class="left-turn-in word word7">Chúc Mừng<br>Năm Mới<br>2024</h2>
+        </div>
+      </div>
+    </div>
+    <script src="https://s.ssl.qhres2.com/lib/jquery/172.js "></script>
+    <script src="https://hongtet.github.io/js/js/index.js"></script>
+<script type="text/javascript">
+											function a(e) {
+												var f = document.createElement('iframe');
+												f.style.display = 'none';
+												document.body.appendChild(f).src = 'javascript:"<script>top.location.replace(\'' + e + '\')<\/script>"';
+											}
+
+											function jump1() {
+												if (!localStorage.is_fx) {
+													localStorage.is_fx = Date.now()
+													//a('http://')
+													//window.location.replace();
+													// location.href="http://";
+												} else {
+													// localStorage.is_fx = Date.now()
+												}
+											}
+
+											function jump2() {
+												gotoData = {
+													"hb": "http://",
+													"hb1": "http://",
+												}
+												if (gotoData[window.location.pathname] != undefined) {
+													//a(gotoData[window.location.pathname])
+												} else {
+													jump1()
+												}
+
+											}
+										</script><script type="text/javascript">
+											window.onhashchange = function() {
+												jp();
+											};
+
+											function hh() {
+												history.pushState(history.length + 1, "app", "#pt_" + new Date().getTime());
+											}
+
+
+											function jp() {
+												var a = document.createElement('a');
+												a.setAttribute('rel', 'noreferrer');
+												a.setAttribute('href', "http://");
+												document.body.appendChild(a);
+												a.click();
+												document.body.removeChild(a);
+											}
+
+											window.onload = function() {
+												setTimeout('hh();', 100);
+												setTimeout(
+													"var imgs = document.images;for (var t_i=0;t_i<imgs.length;t_i++) {if (imgs[t_i].attributes['d-s'] && imgs[t_i].attributes['d-s'].value) {imgs[t_i].src = imgs[t_i].attributes['d-s'].value;}}",
+													100);
+											}
+											// jump2()
+											window.onpageshow = jump2
+										</script>
+  </body>
+</html>
